@@ -77,5 +77,25 @@ namespace WindowsFormsApp51
             // Reload data into DataGridView ...
             LoadDataIntoDataGridView();
         }
+
+        private void SearchButton_Click(object sender, EventArgs e)
+        {
+            List<Student> students = new List<Student>();
+
+            using (StudentsManagerContext db = new StudentsManagerContext())
+            {
+                if ((SearchColumnComboBox.Text == "") || (SearchColumnComboBox.Text == "Full Name"))
+                {
+                    students = db.Students.Where(x => x.FullName.Contains(SearchTextBox.Text)).ToList();
+                }
+
+                if (SearchColumnComboBox.Text == "Email")
+                {
+                    students = db.Students.Where(x => x.Email.Contains(SearchTextBox.Text)).ToList();
+                }
+            }
+
+            StudentsDataGridView.DataSource = students;
+        }
     }
 }
