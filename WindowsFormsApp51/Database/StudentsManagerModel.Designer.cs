@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\Admin\source\repos\WindowsFormsApp51\WindowsFormsApp51\Database\StudentsManagerModel.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\Admin\source\repos\programinurdu\WindowsFormsApp51\WindowsFormsApp51\Database\StudentsManagerModel.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

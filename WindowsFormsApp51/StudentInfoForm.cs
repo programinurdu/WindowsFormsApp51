@@ -34,6 +34,11 @@ namespace WindowsFormsApp51
             student.Email = EmailTextBox.Text;
             student.Mobile = MobileTextBox.Text;
             student.Phone = PhoneTextBox.Text;
+            student.Gender = GetGender();
+            student.CSharp = CSharpCheckBox.Checked;
+            student.VBNET = VBNETCheckBox.Checked;
+            student.HTML = HtmlCheckBox.Checked;
+            student.Photoshop = PhotoshopCheckBox.Checked;
             student.Notes = NotesTextBox.Text;
 
             if (!this.IsUpdate)
@@ -60,6 +65,26 @@ namespace WindowsFormsApp51
             this.Close();
         }
 
+        private string GetGender()
+        {
+            if (MaleRadioButton.Checked)
+            {
+                return "Male";
+            }
+
+            if (FemaleRadioButton.Checked)
+            {
+                return "Female";
+            }
+
+            if (OthersRadioButton.Checked)
+            {
+                return "Others";
+            }
+
+            return string.Empty;
+        }
+
         private void StudentInfoForm_Load(object sender, EventArgs e)
         {
             LoadDataIntoFormIfUpdate();
@@ -80,7 +105,30 @@ namespace WindowsFormsApp51
                 EmailTextBox.Text = student.Email;
                 MobileTextBox.Text = student.Mobile;
                 PhoneTextBox.Text = student.Phone;
+                LoadGender(student);
+                CSharpCheckBox.Checked = (student.CSharp == true) ? true :false;
+                VBNETCheckBox.Checked = (student.VBNET == true) ? true : false;
+                HtmlCheckBox.Checked = (student.HTML == true) ? true : false;
+                PhotoshopCheckBox.Checked = (student.Photoshop == true) ? true : false;
                 NotesTextBox.Text = student.Notes;
+            }
+        }
+
+        private void LoadGender(Student student)
+        {
+            if (student.Gender == "Male")
+            {
+                MaleRadioButton.Checked = true;
+            }
+
+            if (student.Gender == "Female")
+            {
+                FemaleRadioButton.Checked = true;
+            }
+
+            if (student.Gender == "Others")
+            {
+                OthersRadioButton.Checked = true;
             }
         }
     }

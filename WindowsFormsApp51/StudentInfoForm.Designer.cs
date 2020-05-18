@@ -40,6 +40,17 @@
             this.EmailLabel = new System.Windows.Forms.Label();
             this.FullNameTextBox = new System.Windows.Forms.TextBox();
             this.FullNameLabel = new System.Windows.Forms.Label();
+            this.GenderGroupBox = new System.Windows.Forms.GroupBox();
+            this.OthersRadioButton = new System.Windows.Forms.RadioButton();
+            this.FemaleRadioButton = new System.Windows.Forms.RadioButton();
+            this.MaleRadioButton = new System.Windows.Forms.RadioButton();
+            this.SelectCourseGroupBox = new System.Windows.Forms.GroupBox();
+            this.CSharpCheckBox = new System.Windows.Forms.CheckBox();
+            this.VBNETCheckBox = new System.Windows.Forms.CheckBox();
+            this.PhotoshopCheckBox = new System.Windows.Forms.CheckBox();
+            this.HtmlCheckBox = new System.Windows.Forms.CheckBox();
+            this.GenderGroupBox.SuspendLayout();
+            this.SelectCourseGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // CloseButton
@@ -65,18 +76,18 @@
             // NotesTextBox
             // 
             this.NotesTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NotesTextBox.Location = new System.Drawing.Point(35, 230);
+            this.NotesTextBox.Location = new System.Drawing.Point(35, 448);
             this.NotesTextBox.Multiline = true;
             this.NotesTextBox.Name = "NotesTextBox";
             this.NotesTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.NotesTextBox.Size = new System.Drawing.Size(735, 204);
+            this.NotesTextBox.Size = new System.Drawing.Size(856, 228);
             this.NotesTextBox.TabIndex = 16;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(31, 203);
+            this.label4.Location = new System.Drawing.Point(31, 415);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 24);
             this.label4.TabIndex = 7;
@@ -154,11 +165,126 @@
             this.FullNameLabel.TabIndex = 12;
             this.FullNameLabel.Text = "Full Name:";
             // 
+            // GenderGroupBox
+            // 
+            this.GenderGroupBox.Controls.Add(this.OthersRadioButton);
+            this.GenderGroupBox.Controls.Add(this.FemaleRadioButton);
+            this.GenderGroupBox.Controls.Add(this.MaleRadioButton);
+            this.GenderGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GenderGroupBox.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.GenderGroupBox.Location = new System.Drawing.Point(35, 215);
+            this.GenderGroupBox.Name = "GenderGroupBox";
+            this.GenderGroupBox.Size = new System.Drawing.Size(531, 90);
+            this.GenderGroupBox.TabIndex = 19;
+            this.GenderGroupBox.TabStop = false;
+            this.GenderGroupBox.Text = "Gender";
+            // 
+            // OthersRadioButton
+            // 
+            this.OthersRadioButton.AutoSize = true;
+            this.OthersRadioButton.ForeColor = System.Drawing.Color.Black;
+            this.OthersRadioButton.Location = new System.Drawing.Point(369, 41);
+            this.OthersRadioButton.Name = "OthersRadioButton";
+            this.OthersRadioButton.Size = new System.Drawing.Size(84, 28);
+            this.OthersRadioButton.TabIndex = 6;
+            this.OthersRadioButton.TabStop = true;
+            this.OthersRadioButton.Text = "Others";
+            this.OthersRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // FemaleRadioButton
+            // 
+            this.FemaleRadioButton.AutoSize = true;
+            this.FemaleRadioButton.ForeColor = System.Drawing.Color.Black;
+            this.FemaleRadioButton.Location = new System.Drawing.Point(204, 41);
+            this.FemaleRadioButton.Name = "FemaleRadioButton";
+            this.FemaleRadioButton.Size = new System.Drawing.Size(92, 28);
+            this.FemaleRadioButton.TabIndex = 5;
+            this.FemaleRadioButton.TabStop = true;
+            this.FemaleRadioButton.Text = "Female";
+            this.FemaleRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // MaleRadioButton
+            // 
+            this.MaleRadioButton.AutoSize = true;
+            this.MaleRadioButton.ForeColor = System.Drawing.Color.Black;
+            this.MaleRadioButton.Location = new System.Drawing.Point(32, 41);
+            this.MaleRadioButton.Name = "MaleRadioButton";
+            this.MaleRadioButton.Size = new System.Drawing.Size(69, 28);
+            this.MaleRadioButton.TabIndex = 4;
+            this.MaleRadioButton.TabStop = true;
+            this.MaleRadioButton.Text = "Male";
+            this.MaleRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // SelectCourseGroupBox
+            // 
+            this.SelectCourseGroupBox.Controls.Add(this.CSharpCheckBox);
+            this.SelectCourseGroupBox.Controls.Add(this.VBNETCheckBox);
+            this.SelectCourseGroupBox.Controls.Add(this.PhotoshopCheckBox);
+            this.SelectCourseGroupBox.Controls.Add(this.HtmlCheckBox);
+            this.SelectCourseGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SelectCourseGroupBox.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.SelectCourseGroupBox.Location = new System.Drawing.Point(35, 320);
+            this.SelectCourseGroupBox.Name = "SelectCourseGroupBox";
+            this.SelectCourseGroupBox.Size = new System.Drawing.Size(531, 85);
+            this.SelectCourseGroupBox.TabIndex = 20;
+            this.SelectCourseGroupBox.TabStop = false;
+            this.SelectCourseGroupBox.Text = "Select Course(s)";
+            // 
+            // CSharpCheckBox
+            // 
+            this.CSharpCheckBox.AutoSize = true;
+            this.CSharpCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CSharpCheckBox.ForeColor = System.Drawing.Color.Black;
+            this.CSharpCheckBox.Location = new System.Drawing.Point(25, 38);
+            this.CSharpCheckBox.Name = "CSharpCheckBox";
+            this.CSharpCheckBox.Size = new System.Drawing.Size(52, 28);
+            this.CSharpCheckBox.TabIndex = 7;
+            this.CSharpCheckBox.Text = "C#";
+            this.CSharpCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // VBNETCheckBox
+            // 
+            this.VBNETCheckBox.AutoSize = true;
+            this.VBNETCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VBNETCheckBox.ForeColor = System.Drawing.Color.Black;
+            this.VBNETCheckBox.Location = new System.Drawing.Point(117, 38);
+            this.VBNETCheckBox.Name = "VBNETCheckBox";
+            this.VBNETCheckBox.Size = new System.Drawing.Size(98, 28);
+            this.VBNETCheckBox.TabIndex = 8;
+            this.VBNETCheckBox.Text = "VB.NET";
+            this.VBNETCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // PhotoshopCheckBox
+            // 
+            this.PhotoshopCheckBox.AutoSize = true;
+            this.PhotoshopCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PhotoshopCheckBox.ForeColor = System.Drawing.Color.Black;
+            this.PhotoshopCheckBox.Location = new System.Drawing.Point(376, 38);
+            this.PhotoshopCheckBox.Name = "PhotoshopCheckBox";
+            this.PhotoshopCheckBox.Size = new System.Drawing.Size(120, 28);
+            this.PhotoshopCheckBox.TabIndex = 10;
+            this.PhotoshopCheckBox.Text = "Photoshop";
+            this.PhotoshopCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // HtmlCheckBox
+            // 
+            this.HtmlCheckBox.AutoSize = true;
+            this.HtmlCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HtmlCheckBox.ForeColor = System.Drawing.Color.Black;
+            this.HtmlCheckBox.Location = new System.Drawing.Point(255, 38);
+            this.HtmlCheckBox.Name = "HtmlCheckBox";
+            this.HtmlCheckBox.Size = new System.Drawing.Size(81, 28);
+            this.HtmlCheckBox.TabIndex = 9;
+            this.HtmlCheckBox.Text = "HTML";
+            this.HtmlCheckBox.UseVisualStyleBackColor = true;
+            // 
             // StudentInfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(917, 688);
+            this.Controls.Add(this.SelectCourseGroupBox);
+            this.Controls.Add(this.GenderGroupBox);
             this.Controls.Add(this.CloseButton);
             this.Controls.Add(this.SaveRecordButton);
             this.Controls.Add(this.NotesTextBox);
@@ -176,6 +302,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Student Info Screen";
             this.Load += new System.EventHandler(this.StudentInfoForm_Load);
+            this.GenderGroupBox.ResumeLayout(false);
+            this.GenderGroupBox.PerformLayout();
+            this.SelectCourseGroupBox.ResumeLayout(false);
+            this.SelectCourseGroupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -195,5 +325,14 @@
         private System.Windows.Forms.Label EmailLabel;
         private System.Windows.Forms.TextBox FullNameTextBox;
         private System.Windows.Forms.Label FullNameLabel;
+        private System.Windows.Forms.GroupBox GenderGroupBox;
+        private System.Windows.Forms.RadioButton OthersRadioButton;
+        private System.Windows.Forms.RadioButton FemaleRadioButton;
+        private System.Windows.Forms.RadioButton MaleRadioButton;
+        private System.Windows.Forms.GroupBox SelectCourseGroupBox;
+        private System.Windows.Forms.CheckBox CSharpCheckBox;
+        private System.Windows.Forms.CheckBox VBNETCheckBox;
+        private System.Windows.Forms.CheckBox PhotoshopCheckBox;
+        private System.Windows.Forms.CheckBox HtmlCheckBox;
     }
 }

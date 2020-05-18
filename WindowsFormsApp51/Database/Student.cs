@@ -20,5 +20,10 @@ namespace WindowsFormsApp51.Database
         public string Mobile { get; set; }
         public string Phone { get; set; }
         public string Notes { get; set; }
+        public string Gender { get; set; }
+        public Nullable<bool> CSharp { get; set; }
+        public Nullable<bool> VBNET { get; set; }
+        public Nullable<bool> HTML { get; set; }
+        public Nullable<bool> Photoshop { get; set; }
     }
 }
